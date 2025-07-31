@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>You Found a Pet!</title>
 
-  <!-- Load Red Hat Display font -->
+  <!-- Red Hat Display font -->
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #fff1e0;
       color: #2a40d1;
@@ -16,37 +20,59 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
-      text-align: center;
       margin: 0;
-      padding: 20px;
+      padding: 10px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 1.5rem;
       color: #3f63ae;
-      margin-bottom: 20px;
+      margin: 10px 0;
     }
 
     .logo {
-      width: 240px;
-      margin-bottom: 20px;
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
     }
 
     .mascot {
-      width: 500px;
-      border-radius: 20px;
-      margin-bottom: 20px;
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 10px;
     }
 
     .badge {
       background-color: #f6c65b;
-      padding: 20px 40px;
-      font-size: 1.4em;
-      border-radius: 30px;
-      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 20px;
       font-weight: bold;
+      max-width: 90%;
+    }
+
+    @media (min-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .logo {
+        width: 160px;
+      }
+
+      .mascot {
+        max-width: 400px;
+      }
+
+      .badge {
+        font-size: 1.2rem;
+        padding: 14px 28px;
+      }
     }
   </style>
 </head>
@@ -62,3 +88,4 @@
 
 </body>
 </html>
+
